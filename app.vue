@@ -26,17 +26,16 @@ const goToImage = (index) => {
 </script>
 
 <template>
-  <div
-    class="bg-slate-950 text-gray-50 min-h-screen flex items-center justify-center py-5"
-  >
+  <div class="bg-slate-900 min-h-screen flex items-center justify-center py-5">
     <div
       @mouseenter="handleMouseEnter"
       @mouseleave="handleMouseLeave"
-      class="relative w-full max-w-[95%] md:max-w-[800px] h-[500px] mx-auto rounded-lg overflow-hidden outline outline-lime-100"
+      class="relative w-full max-w-[95%] md:max-w-[800px] h-[500px] mx-auto rounded-lg overflow-hidden outline outline-[3px] outline-green-200"
     >
       <img
         class="w-full h-full object-cover"
         :src="currentImage"
+        :key="currentImage"
         alt="carousel image"
       />
 
